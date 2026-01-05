@@ -1,0 +1,10 @@
+<p>login works!</p>
+<label>Username</label>
+<input [(ngModel)]="username"/>
+<label>Password</label>
+<input [(ngModel)]="password"/>
+<button (click)="showCredentials()">Click mee</button>
+
+@if(isShowCredentials){
+    <a>Your username is: {{username}}, and password is: {{password}}</a>
+}
